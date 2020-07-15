@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
-    "redux-devtools": "^3.5.0"
+    "redux-devtools": "^3.5.0",
+    "reselect": "^4.0.0"
   }
 }

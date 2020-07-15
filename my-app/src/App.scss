@@ -1,0 +1,98 @@
+.app {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-width: 70em;
+  max-height: 1000px;
+  border: solid 1px darkgray;
+  border-radius: 3px;
+  overflow-x: hidden;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &__login,
+    &__name,
+    &__description,
+    &__link {
+      display: block;
+      padding: 10px;
+      min-width: 20%;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    &__description {
+      width: 25em;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+
+    justify-content: space-around;
+    &:nth-child(even) {
+      background-color: #e8e8e8;
+    }
+
+    &__login,
+    &__description,
+    &__name,
+    &__full-name {
+      display: block;
+      padding: 10px;
+      height: 60px;
+
+      min-width: 20%;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    &__login,
+    &__name {
+      width: 15em;
+    }
+
+    &__description {
+      overflow-y: auto;
+      width: 30em;
+    }
+
+    &__full-name__button {
+      cursor: pointer;
+      background-color: #5af158;;
+      border: #5af158 1px solid;
+      border-radius: 4px;
+      color: gray;
+      padding: 5px;
+      margin-top: 5%;
+
+      &:hover {
+        background-color: green;
+        color: #e8e8e8;
+      }
+    }
+  }
+}
+
+.search {
+  text-align: center;
+  margin-top: 50px;
+
+  &__input {
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+
+    &:focus {
+      border: 1px solid #d0a6a6;
+      outline: none;
+    }
+  }
+}
